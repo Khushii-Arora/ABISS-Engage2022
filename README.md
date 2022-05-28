@@ -5,7 +5,7 @@ How to Use
 Clone the repository:
 
 ```bash
-git clone
+git clone https://github.com/Khushii-Arora/ABISS-Engage2022.git
 ```
 
 In the project directory, you can run:
