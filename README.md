@@ -20,7 +20,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## How to create descriptors profile
 
-This App uses descriptors profile of known faces (facial feature vector of 128 array of number) stored in JSON format as reference for face recognition. The sample profile of BNK48 current visitors (as of December 2018) is located in folder `src/descriptors/bnk48.json`
+This App uses descriptors profile of known faces (facial feature vector of 128 array of number) stored in JSON format as reference for face recognition. A sample profile of a visitors is located in folder `src/database/face_database.json`
 
 ### JSON Profile
 
@@ -30,17 +30,17 @@ JSON File Format:
 
 ```text
 {
-  "rollno": {
+  "id1": {
 	"rollno":id
-      "name": "nickname",
+        "name": "nickname",
 	"permission": permission status,
       "descriptors": [
       [FEATURE_VECTOR],[FEATURE_VECTOR],...
     ]
   },
-  "visitor_2": {
+  "id2": {
 	"rollno":id
-      "name": "nickname",
+        "name": "nickname",
 	"permission": permission status,
     "descriptors": [
       [FEATURE_VECTOR],[FEATURE_VECTOR],...
@@ -52,11 +52,6 @@ JSON File Format:
 
 Note:
 
-- `visitor_1`, `visitor_2` are object keys to be referred by the App
+- `id1`, `id22` are object keys to be referred by the App
 - `nickname` will be displayed when app recognizes the face
 - `FEATURE_VECTOR` is array of 128 number facial feature known as `descriptor` in face-api.js
-
-
-## License
-
-MIT
