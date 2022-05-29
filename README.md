@@ -1,4 +1,4 @@
-# ABISS: Advanced Biometric Identity Security System
+# ABISS: Advanced Biometric Identification Security System
 
 How to Use
 
@@ -31,7 +31,7 @@ JSON File Format:
 ```text
 {
   "id1": {
-	"rollno":id
+	"rollno":id1
         "name": "nickname",
 	"permission": permission status,
       "descriptors": [
@@ -39,7 +39,7 @@ JSON File Format:
     ]
   },
   "id2": {
-	"rollno":id
+	"rollno":id2
         "name": "nickname",
 	"permission": permission status,
     "descriptors": [
@@ -52,6 +52,6 @@ JSON File Format:
 
 Note:
 
-- `id1`, `id22` are object keys to be referred by the App
+- `id1`, `id2` are object keys to be referred by the App
 - `nickname` will be displayed when app recognizes the face
 - `FEATURE_VECTOR` is array of 128 number facial feature known as `descriptor` in face-api.js
