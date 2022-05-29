@@ -1,4 +1,4 @@
-#🛡️ABISS: Advanced Biometric Identification Security System
+# 🛡️ABISS: Advanced Biometric Identification Security System
 <img src="https://github.com/Khushii-Arora/ABISS-Engage2022/blob/main/src/img/logo3.png" />
 
 ### 📚 Selected Problem Statement
@@ -22,9 +22,21 @@ npm start
 This will run app in development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+## 📜 Note:
+
+- Remember to allow **permission** for camera in the browser and refresh.
+
+## 🧰 Features:
+ 
+- **Works on both Phones and Computers**
+- **Detects Multiple Faces at once**
+- **Security Alert Notification System via Email.**
+- **People are Categoried into Categories to Counter All Kind of Situations.**
+- **Screenshot of Detected Person is Send along with the Alert Notification to Security Team.**
+- **Disable Right Click and Modifier Keys.**
+
+
 ## ⚙️ Technologies Used: 
-
-
 
 - **HTML**
 - **ReactJS**
@@ -50,7 +62,7 @@ JSON File Format:
         "name": "nickname",
 	"permission": permission status,
       "descriptors": [
-      [FEATURE_VECTOR],[FEATURE_VECTOR],...
+      [FEATURE_VECTOR],...
     ]
   },
   "id2": {
@@ -58,7 +70,7 @@ JSON File Format:
         "name": "nickname",
 	"permission": permission status,
     "descriptors": [
-      [FEATURE_VECTOR],[FEATURE_VECTOR],...
+      [FEATURE_VECTOR],...
     ]
   },
   ...
