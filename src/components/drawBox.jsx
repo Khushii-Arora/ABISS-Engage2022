@@ -35,7 +35,7 @@ class DrawBox extends Component {
   };
 
   render() {
-    const { imageWidth} = this.props;
+    const { imageWidth, boxColor } = this.props;
     const { detections, match } = this.state;
     let box = null;
 
@@ -57,10 +57,9 @@ class DrawBox extends Component {
               style={{
                 position: 'absolute',
                 border: 'solid',
-                borderColor: "#3dfffc",
+                borderColor: boxColor,
                 height: _H,
                 width: _W,
-                color:"#3dfffc",
                 transform: `translate(${_X}px,${_Y}px)`
               }}
             >
@@ -69,11 +68,12 @@ class DrawBox extends Component {
               {!!match && match[i] && match[i]._label !== 'unknown' ? (
                 <p
                   style={{
-                    backgroundColor: "#001e31",
+                    backgroundColor: boxColor,
                     border: 'solid',
-                    borderColor: "#3dfffc",
+                    borderColor: boxColor,
                     width: _W,
                     marginTop: 0,
+                    color: '#fff',
                     transform: `translate(-3px,${_H}px)`
                   }}
                 >
@@ -86,11 +86,12 @@ class DrawBox extends Component {
               {!!match && match[i] && match[i]._label === 'unknown' ? (
                 <p
                   style={{
-                    backgroundColor: "#480a0a",
+                    backgroundColor: boxColor,
                     border: 'solid',
-                    borderColor: "#3dfffc",
+                    borderColor: boxColor,
                     width: _W,
                     marginTop: 0,
+                    color: '#fff',
                     transform: `translate(-3px,${_H}px)`
                   }}
                 >

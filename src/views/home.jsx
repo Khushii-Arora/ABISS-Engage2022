@@ -34,7 +34,7 @@ export default class Home extends Component {
              <ul>
               <h4>People are categorized in 4 categories:</h4>
               <li>1. Students</li>
-              <li>2. guests</li>
+              <li>2. VIPs</li>
               <li>3. Blacklisted</li>
               <li>4. Unknown</li>
             </ul>
