@@ -11,7 +11,6 @@ import ShowDescriptors from '../components/showDescriptors';
 import { JSON_PROFILE } from '../common/profile';
 
 const MaxWidth = 600;
-const boxColor = '#BE80B5';
 const welcome = require('../img/login.svg');
 
 const INIT_STATE = {
@@ -126,19 +125,19 @@ class FaceRecognition extends Component {
       loading
     } = this.state;
 
-    // Display working status
+    //Telling the face detection status for an uploaded image
     let status = <p>Status: Model Loaded = {isModelLoaded.toString()}</p>;
     if (!!error && error.toString() === 'TypeError: Failed to fetch') {
       status = (
         <p style={{ color: 'red' }}>Status: Error! Unable to fetch Image URL</p>
       );
     } else if (loading) {
-      status = <p style={{ color: 'blue' }}>Status: LOADING...</p>;
+      status = <p style={{ color: 'white' }}>Status: LOADING...</p>;
     } else if (!!fullDiscription && !!imageURL && !loading) {
       if (fullDiscription.length < 2)
-        status = <p>Status: {fullDiscription.length} Face Detect</p>;
+        status = <p style={{ color: "#3dfffc" }}>Status: {fullDiscription.length} Face Detect</p>;
       if (fullDiscription.length > 1)
-        status = <p>Status: {fullDiscription.length} Faces Detect</p>;
+        status = <p style={{ color: "#3dfffc" }}>Status: {fullDiscription.length} Faces Detect</p>;
     }
 
     // Loading Sign
@@ -146,7 +145,7 @@ class FaceRecognition extends Component {
       <div
         style={{
           margin: 0,
-          color: '#BE80B5',
+          color: '#3dfffc',
           position: 'absolute',
           top: '50%',
           left: '50%',
@@ -175,7 +174,6 @@ class FaceRecognition extends Component {
                   fullDiscription={fullDiscription}
                   faceMatcher={faceMatcher}
                   imageWidth={WIDTH}
-                  boxColor={boxColor}
                 />
               ) : null}
             </div>
@@ -187,7 +185,9 @@ class FaceRecognition extends Component {
             width: WIDTH,
             padding: 10,
             border: 'solid',
-            marginTop: 10
+            borderColor:"#3dfffc",
+            marginTop: 10,
+            color: 'white'
           }}
         >
           <p>Input Image file or URL</p>

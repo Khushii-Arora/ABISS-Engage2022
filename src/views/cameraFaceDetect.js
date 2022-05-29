@@ -6,8 +6,8 @@ import DrawBox from '../components/drawBox';
 import PermissionCheck from '../components/permissionCheck';
 import { JSON_PROFILE } from '../common/profile';
 
-const WIDTH = 300;
-const HEIGHT = 300;
+const WIDTH = 350;
+const HEIGHT = 350;
 const inputSize = 160;
 
 class CameraFaceDetect extends Component {
@@ -89,6 +89,7 @@ class CameraFaceDetect extends Component {
     }
 
     return (
+      
       <div
         className="Camera"
         style={{
@@ -101,7 +102,8 @@ class CameraFaceDetect extends Component {
         }}
       >
         <p style={{color:'white'}}>Camera: {camera}</p>
-        {!!fullDiscription ? (
+        
+              {!!fullDiscription ? (
               <PermissionCheck
                 fullDiscription={fullDiscription}
                 faceMatcher={faceMatcher}
@@ -112,7 +114,8 @@ class CameraFaceDetect extends Component {
         <div
           style={{
             width: WIDTH,
-            height: HEIGHT
+            height: HEIGHT,
+            margin:20,
           }}
         >
           <div style={{ position: 'relative', width: WIDTH }}>
@@ -133,12 +136,12 @@ class CameraFaceDetect extends Component {
                 fullDiscription={fullDiscription}
                 faceMatcher={faceMatcher}
                 imageWidth={WIDTH}
-                boxColor={'green'}
               />
             ) : <p style={{color:'white'}}>"loading webcam..."</p>}
           </div>
         </div>
       </div>
+      
     );
   }
 }

@@ -48,7 +48,7 @@ class ShowDescriptors extends Component {
                   margin: 20,
                   wordBreak: 'break-all',
                   borderStyle: 'solid',
-                  borderColor: 'blue'
+                  borderColor: "#3dfffc"
                 }}
               >
                 <strong>Descriptor_{i}: </strong>
