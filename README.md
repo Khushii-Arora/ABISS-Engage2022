@@ -4,15 +4,15 @@
 ### 📚 Selected Problem Statement
 Develop a browser-based application or a native mobile application to demonstrate application of Face Recognition technology.
 
-How to Use
+##How to Use
 
-Clone the repository:()
+**clone the repository:()**
 
 ```bash
 git clone https://github.com/Khushii-Arora/ABISS-Engage2022.git
 ```
 
-In the project directory, you can run:
+**In the project directory, you can run:**
 
 ```bash
 npm install --save
@@ -20,7 +20,8 @@ npm start
 ```
 
 This will run app in development mode.
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+**Open [http://localhost:3000](http://localhost:3000) to view it in the browser.**
 
 ## 📜 Note:
 
