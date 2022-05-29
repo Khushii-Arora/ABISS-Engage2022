@@ -1,8 +1,12 @@
-# ABISS: Advanced Biometric Identification Security System
+#🛡️ABISS: Advanced Biometric Identification Security System
+<img src="https://github.com/Khushii-Arora/ABISS-Engage2022/blob/main/src/img/logo3.png" />
+
+### 📚 Selected Problem Statement
+Develop a browser-based application or a native mobile application to demonstrate application of Face Recognition technology.
 
 How to Use
 
-Clone the repository:
+Clone the repository:()
 
 ```bash
 git clone https://github.com/Khushii-Arora/ABISS-Engage2022.git
@@ -17,6 +21,17 @@ npm start
 
 This will run app in development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+## ⚙️ Technologies Used: 
+
+
+
+- **HTML**
+- **ReactJS**
+- **CSS**
+- **BOOTSTRAP**
+- **[face-api.js](https://github.com/justadudewhohacks/face-api.js/) face detection API**
+- **Other third party services like emailjs**
 
 ## How to create descriptors profile
 

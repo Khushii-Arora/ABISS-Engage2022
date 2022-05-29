@@ -4,6 +4,7 @@ import createHistory from 'history/createBrowserHistory';
 import FaceRecognition from './views/faceRecognition';
 import CameraFaceDetect from './views/cameraFaceDetect';
 import Home from './views/home';
+import Footer from './components/footer.jsx';
 import Header from './components/header';
 import './App.css';
 
@@ -18,6 +19,7 @@ class App extends Component {
             <Route exact path="/" component={Home} />
             <Route exact path="/photo" component={FaceRecognition} />
             <Route exact path="/camera" component={CameraFaceDetect} />
+            <Footer />
           </div>
         </Router>
       </div>
