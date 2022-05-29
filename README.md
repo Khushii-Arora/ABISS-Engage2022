@@ -1,14 +1,18 @@
-# ABISS: Advanced Biometric Identification Security System
+# 🛡️ABISS: Advanced Biometric Identification Security System
+<img src="https://github.com/Khushii-Arora/ABISS-Engage2022/blob/main/src/img/logo3.png" />
 
-How to Use
+### 📚 Selected Problem Statement
+Develop a browser-based application or a native mobile application to demonstrate application of Face Recognition technology.
 
-Clone the repository:
+##How to Use
+
+**clone the repository:()**
 
 ```bash
 git clone https://github.com/Khushii-Arora/ABISS-Engage2022.git
 ```
 
-In the project directory, you can run:
+**In the project directory, you can run:**
 
 ```bash
 npm install --save
@@ -16,7 +20,30 @@ npm start
 ```
 
 This will run app in development mode.
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+**Open [http://localhost:3000](http://localhost:3000) to view it in the browser.**
+
+## 📜 Note:
+
+- Remember to allow **permission** for camera in the browser and refresh.
+
+## 🧰 Features:
+ 
+- **Works on both Phones and Computers**
+- **Detects Multiple Faces at once**
+- **Security Alert Notification System via Email.**
+- **People are Categoried into Categories to Counter All Kind of Situations.**
+- **Screenshot of Detected Person is Send along with the Alert Notification to Security Team.**
+
+
+## ⚙️ Technologies Used: 
+
+- **HTML**
+- **ReactJS**
+- **CSS**
+- **BOOTSTRAP**
+- **[face-api.js](https://github.com/justadudewhohacks/face-api.js/) face detection API**
+- **Other third party services like emailjs**
 
 ## How to create descriptors profile
 
@@ -35,7 +62,7 @@ JSON File Format:
         "name": "nickname",
 	"permission": permission status,
       "descriptors": [
-      [FEATURE_VECTOR],[FEATURE_VECTOR],...
+      [FEATURE_VECTOR],...
     ]
   },
   "id2": {
@@ -43,7 +70,7 @@ JSON File Format:
         "name": "nickname",
 	"permission": permission status,
     "descriptors": [
-      [FEATURE_VECTOR],[FEATURE_VECTOR],...
+      [FEATURE_VECTOR],...
     ]
   },
   ...
