@@ -6,8 +6,8 @@ import DrawBox from '../components/drawBox';
 import PermissionCheck from '../components/permissionCheck';
 import { JSON_PROFILE } from '../common/profile';
 
-const WIDTH = 400;
-const HEIGHT = 400;
+const WIDTH = 300;
+const HEIGHT = 300;
 const inputSize = 160;
 
 class CameraFaceDetect extends Component {
