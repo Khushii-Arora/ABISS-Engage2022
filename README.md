@@ -34,7 +34,6 @@ This will run app in development mode.
 - **Security Alert Notification System via Email.**
 - **People are Categoried into Categories to Counter All Kind of Situations.**
 - **Screenshot of Detected Person is Send along with the Alert Notification to Security Team.**
-- **Disable Right Click and Modifier Keys.**
 
 
 ## ⚙️ Technologies Used: 
